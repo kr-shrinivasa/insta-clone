@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Postview from './Postview';
+// import './index.css';
+// import Postview from './Postview';
 import reportWebVitals from './reportWebVitals';
+import App from './App'
+import {BrowserRouter} from "react-router-dom";
 
 
 
 
 
 ReactDOM.render(
+  <BrowserRouter>
   <React.StrictMode>
-    <Postview />
-  </React.StrictMode>,
+    <App />
+  </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
